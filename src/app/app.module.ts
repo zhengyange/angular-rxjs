@@ -13,6 +13,8 @@ import { LoginComponent } from './login/login.component';
 
 import { AuthService } from './core/auth.service';
 import { AppRoutingModule } from './app.routes';
+import { HomeComponent } from './home/home.component';
+import { TypescriptComponent } from './typescript/typescript.component';
 // import { TodoComponent } from './todo/todo.component';
 // import { TodoFooterComponent } from './todo/todo-footer/todo-footer.component';
 // import { TodoHeaderComponent } from './todo/todo-header/todo-header.component';
@@ -21,6 +23,8 @@ import { AppRoutingModule } from './app.routes';
   declarations: [
     AppComponent,
     LoginComponent,
+    HomeComponent,
+    TypescriptComponent,
     // TodoComponent,
     // TodoFooterComponent,
     // TodoHeaderComponent

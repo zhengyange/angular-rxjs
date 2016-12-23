@@ -11,5 +11,9 @@
     2. typescript; 也了解过一点，决定重新学习
     3. rxjs; 一点没接触过，typescript后就是它了
     4. angular2; 最终目的就是你
+    - 配置好home页路由，创建学习列表组件
+    - 配置好typescript组件及路由，就从你开始了
+
+
 
 
