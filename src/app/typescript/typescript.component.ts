@@ -18,17 +18,62 @@ export class TypescriptComponent implements OnInit {
 
 }
 
-interface ClockInterface {
-  currentTime: Date;
-  setTime(d: Date);
+function f() {
+    console.log("f(): evaluated");
+    return function (target, propertyKey: string, descriptor: PropertyDescriptor) {
+        console.log("f(): called");
+    }
 }
 
-class Clock implements ClockInterface {
-  currentTime: Date;
-  setTime(d: Date): void {
-    this.currentTime = d;
-  }
+function g() {
+    console.log("g(): evaluated");
+    return function (target, propertyKey: string, descriptor: PropertyDescriptor) {
+        console.log("g(): called");
+    }
 }
+
+class C {
+    @f()
+    @g()
+    method() {}
+}
+// function identity<F>(arg: F[]): F[] {
+//   console.log(arg.length)
+//   return arg
+// }
+
+// console.log(identity(2))
+
+
+// let deck = {
+//     suits: ["hearts", "spades", "clubs", "diamonds"],
+//     cards: Array(52),
+//     createCardPicker: function() {
+//         return () => {
+//             let pickedCard = Math.floor(Math.random() * 52);
+//             let pickedSuit = Math.floor(pickedCard / 13);
+
+//             return {suit: this.suits[pickedSuit], card: pickedCard % 13};
+//         }
+//     }
+// }
+
+// let cardPicker = deck.createCardPicker();
+// let pickedCard = cardPicker();
+
+// alert("card: " + pickedCard.card + " of " + pickedCard.suit);
+
+// interface ClockInterface {
+//   currentTime: Date;
+//   setTime(d: Date);
+// }
+
+// class Clock implements ClockInterface {
+//   currentTime: Date;
+//   setTime(d: Date): void {
+//     this.currentTime = d;
+//   }
+// }
 
 //给接口定义调用签名
 // interface SearchFun {
