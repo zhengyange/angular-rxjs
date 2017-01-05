@@ -15,6 +15,8 @@ import { AuthService } from './core/auth.service';
 import { AppRoutingModule } from './app.routes';
 import { HomeComponent } from './home/home.component';
 import { TypescriptComponent } from './typescript/typescript.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { RxjsTrainingComponent } from './rxjs-training/rxjs-training.component';
 // import { TodoComponent } from './todo/todo.component';
 // import { TodoFooterComponent } from './todo/todo-footer/todo-footer.component';
 // import { TodoHeaderComponent } from './todo/todo-header/todo-header.component';
@@ -25,6 +27,8 @@ import { TypescriptComponent } from './typescript/typescript.component';
     LoginComponent,
     HomeComponent,
     TypescriptComponent,
+    RxjsComponent,
+    RxjsTrainingComponent,
     // TodoComponent,
     // TodoFooterComponent,
     // TodoHeaderComponent

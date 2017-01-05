@@ -18,25 +18,25 @@ export class TypescriptComponent implements OnInit {
 
 }
 
-function f() {
-    console.log("f(): evaluated");
-    return function (target, propertyKey: string, descriptor: PropertyDescriptor) {
-        console.log("f(): called");
-    }
-}
+// function f() {
+//     console.log("f(): evaluated");
+//     return function (target, propertyKey: string, descriptor: PropertyDescriptor) {
+//         console.log("f(): called");
+//     }
+// }
 
-function g() {
-    console.log("g(): evaluated");
-    return function (target, propertyKey: string, descriptor: PropertyDescriptor) {
-        console.log("g(): called");
-    }
-}
+// function g() {
+//     console.log("g(): evaluated");
+//     return function (target, propertyKey: string, descriptor: PropertyDescriptor) {
+//         console.log("g(): called");
+//     }
+// }
 
-class C {
-    @f()
-    @g()
-    method() {}
-}
+// class C {
+//     @f()
+//     @g()
+//     method() {}
+// }
 // function identity<F>(arg: F[]): F[] {
 //   console.log(arg.length)
 //   return arg

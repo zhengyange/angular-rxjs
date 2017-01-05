@@ -58,6 +58,12 @@ let s = e!.name;
     2、类装饰器，在类声明之前调用，必须紧挨着类声明，类装饰器应用于构造函数，可以用来监视、修改、或替换类定义  
     3、
 
+### 2017年1月5日  
+    1、进入2017年，继续努力学习angular2，此部分进入到RxJs，下面是搜集到的比较好的RxJs学习训练demo
+    2、先开始[staltz - rxjs training](https://github.com/staltz/rxjs-training) 
+    3、ng g c rxjs-training生成rxjs-training组件部分，配置对应路由
+    
+
 
 
 
