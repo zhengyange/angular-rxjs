@@ -1,71 +1,27 @@
-# angular-rxjs
-    准备学习angular2，突然发现，要学typescript、rxjs、es6。。。 再想像上手react\vue那样一天或者两天就能写项目了，已经不是那么容易了。  
-    网友说的对：typescript、rxjs、angular2任何一个独立的技能都能让你和其他的前端开发产生很大的距离。  
-    更何况现在要把这三种技能融合在一起写项目，学习技能急是不行的，基础最重要，一步一步来吧，
+# NgTmp
 
-## 2016年12月23日
-    硬着头皮，看着教程还是把angular2的todomvc小demo搞出来，突然发现：越写越朦逼，越写越不知道这到底是个什么玩意了。  
-    于是乎，我决定放缓一下脚步，还是从最基础学习吧。
-    制定学习步骤：   
-    1. ES6; (这一块基本会使用了，准备跳过)
-    2. typescript; 也了解过一点，决定重新学习
-    3. rxjs; 一点没接触过，typescript后就是它了
-    4. angular2; 最终目的就是你
-    - 配置好home页路由，创建学习列表组件
-    - 配置好typescript组件及路由，就从你开始了
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
 
-## 2016年12月25日
-### 1、非空断言操作符，类似`x!`，产生一个不包含null和undefined的值，对`'.'`运算符特别有用
-```js
-//比较
-let s = e && e.name;
-let s = e!.name;
-// 断言e是非空，才访问name属性  
-// 两者能达到同样的使用效果，后面一种写法是不是更符合语言规范一点，  
-// 事实上typescript是直接存在非空断言操作符的，所以再不需要**e && e.name**这种写法了  
-// <T>x 与 x as T这种写法还不知道是怎么回事？？？
-```
+## Development server
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-### 2、只有数组或者说集合一类的类型才会有泛型？？？
+## Code scaffolding
 
-### 3、类型断言
-```js
-//回答1中的问题
-<T>x 与 x as T 这种语法是类型断言
-```
-### 4、当你展开一个对象实例时，你会丢失其方法
-### 5、接口
-    1、接口的作用就是类型命令，或为你的代码中第三方代码定义契约
-    2、对象字面量会被特殊对待，而且会经过额外属性检查，--当它们赋值给变量或作为参数传递的时候  
-    3、对象变量作为参数传递，不会经过额外属性检查  
-    4、接口也可以描述函数类型  
-    5、可索引类型，及索引签名
-    6、接口作类类型，它描述了类的公共部分
-### 6、函数
-    1、在javascript里，this的值在函数调用的时候才会指定
-    2、箭头函数能保存（维持）函数创建时的this，而不是调用时的this
-    3、可先参数、默认参数、剩余参数，this与箭头函数，重载
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-### 7、泛型
-    1、组件不仅要能支持当前的类型，也要能够支持未来的类型
-    2、
+## Build
 
-### 8、命名空间
-    1、///引用标签，
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-### 9、装饰器
-    1、多个装饰器，由上至下依次求值，由下至上依次执行  
-    2、类装饰器，在类声明之前调用，必须紧挨着类声明，类装饰器应用于构造函数，可以用来监视、修改、或替换类定义  
-    3、
+## Running unit tests
 
-### 2017年1月5日  
-    1、进入2017年，继续努力学习angular2，此部分进入到RxJs，下面是搜集到的比较好的RxJs学习训练demo
-    2、先开始[staltz - rxjs training](https://github.com/staltz/rxjs-training) 
-    3、ng g c rxjs-training生成rxjs-training组件部分，配置对应路由
-    
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+## Running end-to-end tests
 
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
 
+## Further help
 
-
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

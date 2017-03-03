@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class AngularRxjsPage {
+export class NgTmpPage {
   navigateTo() {
     return browser.get('/');
   }

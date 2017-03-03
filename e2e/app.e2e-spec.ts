@@ -1,10 +1,10 @@
-import { AngularRxjsPage } from './app.po';
+import { NgTmpPage } from './app.po';
 
-describe('angular-rxjs App', function() {
-  let page: AngularRxjsPage;
+describe('ng-tmp App', () => {
+  let page: NgTmpPage;
 
   beforeEach(() => {
-    page = new AngularRxjsPage();
+    page = new NgTmpPage();
   });
 
   it('should display message saying app works', () => {
