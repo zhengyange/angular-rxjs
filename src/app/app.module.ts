@@ -18,6 +18,7 @@ import { TypescriptComponent } from './typescript/typescript.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { RxjsTrainingComponent } from './rxjs-training/rxjs-training.component';
 import { RxjsExtensionsComponent } from './rxjs-extensions/rxjs-extensions.component';
+import { RxjsBestComponent } from './rxjs-best/rxjs-best.component';
 // import { TodoComponent } from './todo/todo.component';
 // import { TodoFooterComponent } from './todo/todo-footer/todo-footer.component';
 // import { TodoHeaderComponent } from './todo/todo-header/todo-header.component';
@@ -31,6 +32,7 @@ import { RxjsExtensionsComponent } from './rxjs-extensions/rxjs-extensions.compo
     RxjsComponent,
     RxjsTrainingComponent,
     RxjsExtensionsComponent,
+    RxjsBestComponent,
     // TodoComponent,
     // TodoFooterComponent,
     // TodoHeaderComponent

@@ -1,27 +1,57 @@
-# NgTmp
+### 大规模应用
+    需要众多开发者一同维护，具有一定复杂度的程序
+    - 设计时代码：指的是我们设计程序时编写的TypeScript代码
+    - 执行时代码：指的是TypeScript代码编译后执行的JavaScript代码
+    - TypeScript的类型检测在编译期进行，并且没有运行时开销
+    - 类型被自动推测出来的过程，被称为类型推导
+    - 当一个变量的类型无法被推测时，会被使用特殊类型any作为它的类型
+    - 联合类型用来声明那些可以存储多种类型值的变量
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
+### 接口
+    - 声明接口，用接口约束对象，即将对象声明成接口类型
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### 参数属性
+    参数属性可以让我们很方便的在一地方定义并初始化一个成员, 
+    参数属性通过给构造函数添加一个访问限定符来声明。
+```js
+class Animal {
+    constructor(private name: string) { }
+    move(distanceInMeters: number) {
+        console.log(`${this.name} moved ${distanceInMeters}m.`);
+    }
+}
+```
+### 命令空间
+    - 定义内部命名空间，直接使用namespace 定义就行，
+    - 定义外部命名空间，使用declare namespace '外部全局对象'
+    - 第三方库，需要使用外部全名空间进行声明，事实上只有编译阶段通不过，但是编译阶段通过你就不能打包了，
+    还是为第三方库写个d.ts文件吧，
+    - 似乎ts默认会使用引用标签 「///」，引用当前目录下所有的.d.ts文件
+    
 
-## Code scaffolding
+### 函数部分
+    - 函数本身的类型，即是一个完整的函数描述 
+    - 所有的编译器都会使用void 0 检测undefined
+    - 余参数能带来一定程度上的便利，但是在输出代码中，出现一个多余的循环，所以不建议使用
+    - 范型编程是一种程序语言风格，它允许程序员使用以后才会定义的类型，在实例化时，作为参数指定这些类型
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+### 装饰器
+    - 装饰器：用来在代码的设计时注释和修改类的属性
+    - 装饰器可用来装饰类、属性、方法、参数
+    - 
 
-## Build
+RxJs学习杂谈
+---
+ ## Observable
+```javascript
+/**
+ * 1. create()函数
+ *  大多数情况下，我们没有必使用这函数，现在的operators可以让我们很方便的创建Observable，
+ *  这是一个很低层的方法，适用于有特别需求的情况下 
+ * 2. merge()函数
+ *  meger的Observable按顺序执行
+ */
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+```
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ 
