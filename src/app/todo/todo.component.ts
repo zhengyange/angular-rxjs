@@ -5,7 +5,7 @@ import { Todo } from './todo.model';
 // import { TodoService } from './todo.service';
 
 @Component({
-  selector: 'app-todo',
+  // selector: 'app-todo',
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.less'],
   // providers: [TodoService]
@@ -16,6 +16,7 @@ export class TodoComponent implements OnInit {
 
   constructor(
     @Inject('todoService') private service,
+    // private service: TodoService,
     private route: ActivatedRoute,
     private router: Router) { }
 
